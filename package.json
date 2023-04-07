@@ -1,0 +1,15 @@
+{
+  "name": "react-bundle",
+  "version": "1.0.0",
+  "description": "React bundle with vitejs, typescript, eslint and prettier",
+  "main": "main.js",
+  "repository": "git@github.com-juanvs23:juanvs23/react-butndle-with-vitejs.git",
+  "author": "Juan Carlos Avila <juanvs23@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "type": "module",
+  "devDependencies": {
+    "@vitejs/plugin-react": "^3.1.0",
+    "vite": "^4.2.1"
+  }
+}
