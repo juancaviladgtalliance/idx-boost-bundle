@@ -5,7 +5,7 @@ import path from 'path';
 import react from '@vitejs/plugin-react';
 
 export default defineConfig({
-  base: '/',
+  base: './',
   root: path.join(__dirname, '/src'),
   build: {
     input: path.join(__dirname, '/src'),
