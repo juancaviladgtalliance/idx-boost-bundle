@@ -4,7 +4,7 @@ import { createHtmlPlugin } from 'vite-plugin-html';
 import path from 'path';
 
 export default defineConfig({
- base: '/',
+ base: './',
  root: path.join(__dirname, '/src'),
  build: {
   outDir: `${__dirname}/dist`,
