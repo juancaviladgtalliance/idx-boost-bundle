@@ -1,4 +1,5 @@
 {
+ "homepage": ".",
  "name": "vanilla-bundle",
  "version": "1.0.0",
  "description": "Vanilla bundle with vitejs, typescript, eslint and prettier",
