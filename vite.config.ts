@@ -7,11 +7,10 @@ export default defineConfig({
  base: '/',
  root: path.join(__dirname, '/src'),
  build: {
-  input: path.join(__dirname, '/src'),
   outDir: `${__dirname}/dist`,
   sourcemap: true,
   rollupOptions: {
-   input: path.join(__dirname, '/src/main.js'),
+   input: path.join(__dirname, '/src/main.ts'),
    output: {
     assetFileNames: 'assets/css/[name].[ext]',
     entryFileNames: 'assets/js/[name].js',
@@ -19,14 +18,12 @@ export default defineConfig({
   },
   manifest: true,
  },
- emitIndex: true,
  plugins: [
   // https://github.com/vbenjs/vite-plugin-html
   createHtmlPlugin({
    minify: false,
    pages: [
     {
-     path: '/',
      filename: 'index.html',
      template: './index.html',
      injectOptions: {

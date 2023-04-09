@@ -2,7 +2,7 @@
  "name": "vanilla-bundle",
  "version": "1.0.0",
  "description": "Vanilla bundle with vitejs, typescript, eslint and prettier",
- "main": "main.js",
+ "main": "main.ts",
  "repository": "git@github.com:juanvs23/vanilla-bundle.git",
  "author": "Juan Carlos Avila <juanvs23@gmail.com>",
  "license": "MIT",
@@ -15,6 +15,9 @@
   "preview": "vite --config preview"
  },
  "devDependencies": {
+  "@types/node": "^18.15.11",
+  "@typescript-eslint/eslint-plugin": "^5.57.1",
+  "@typescript-eslint/parser": "^5.57.1",
   "@vitejs/plugin-legacy": "^4.0.2",
   "concurrently": "^8.0.1",
   "eslint": "^7.32.0 || ^8.2.0",
