@@ -1,4 +1,3 @@
-/** @type {import('vite').UserConfig} */
 import { defineConfig } from 'vite';
 import { createHtmlPlugin } from 'vite-plugin-html';
 import path from 'path';
@@ -8,11 +7,10 @@ export default defineConfig({
   base: './',
   root: path.join(__dirname, '/src'),
   build: {
-    input: path.join(__dirname, '/src'),
     outDir: `${__dirname}/dist`,
     sourcemap: true,
     rollupOptions: {
-      input: path.join(__dirname, '/src/app.js'),
+      input: path.join(__dirname, '/src/main.ts'),
       output: {
         assetFileNames: 'assets/css/[name].[ext]',
         entryFileNames: 'assets/js/[name].js',
@@ -20,7 +18,6 @@ export default defineConfig({
     },
     manifest: true,
   },
-  emitIndex: true,
   plugins: [
     react(),
     // https://github.com/vbenjs/vite-plugin-html
@@ -28,7 +25,6 @@ export default defineConfig({
       minify: false,
       pages: [
         {
-          path: '/',
           filename: 'index.html',
           template: './index.html',
           injectOptions: {

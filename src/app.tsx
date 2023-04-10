@@ -4,6 +4,7 @@ import Vite from './public/assets/images/vite.svg';
 import ReactLogo from './public/assets/images/react.svg';
 import Counter from './components/counter';
 import ImageComponent from './components/imageComponent';
+import Ts from './public/assets/images/typescript.svg';
 
 export default function App() {
   return (
@@ -11,6 +12,7 @@ export default function App() {
       <div className="container">
         <div className="images-container">
           <ImageComponent imageUrl={ReactLogo} url="https://react.dev/" />
+          <ImageComponent imageUrl={Ts} url="https://react.dev/" />
           <ImageComponent imageUrl={Vite} url='https://vitejs.dev/"' />
           <ImageComponent imageUrl={IdxLogo} url="https://www.idxboost.com/" />
         </div>
